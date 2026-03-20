@@ -1,0 +1,374 @@
+@font-face {
+    font-family: 'Anastasia';
+    src: url('font/anastasiascript.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* убираем ВСЕ отступы */
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+html, body {
+    background-color: #D2BCA5;
+}
+
+/* БЛОК 1 */
+
+.block1{
+width:100%;
+}
+
+.block1-img{
+width:100%;
+height:auto;
+display:block; /* убирает белые зазоры */
+}
+
+/* БЛОК 2 */
+
+.block2{
+width:100%;
+}
+
+.block2-img{
+width:100%;
+height:auto;
+display:block; /* убирает белые зазоры */
+}
+
+/* БЛОК 3 */
+
+.block3{
+width:100%;
+}
+
+.block3-wrap{
+position:relative;
+width:100%;
+}
+
+/* фото */
+.block3-img{
+width:100%;
+display:block;
+}
+
+/* кнопка поверх */
+.block3-btn{
+position:absolute;
+
+/* 👇 ВОТ ТУТ ТЫ ДВИГАЕШЬ КНОПКУ */
+top:80%;     /* вверх/вниз */
+left:50%;    /* влево/вправо */
+
+transform:translate(-50%, -50%);
+
+border:none;
+background:transparent;
+padding:0;
+cursor:pointer;
+}
+
+/* картинка кнопки */
+.block3-btn img{
+display:block;
+width:127px; /* меняешь размер */
+max-width:70vw;
+height:auto;
+}
+
+/* БЛОК 4 */
+
+.block4{
+width:100%;
+}
+
+.block4-img{
+width:100%;
+height:auto;
+display:block; /* убирает белые зазоры */
+}
+
+/* БЛОК 5 */
+
+.block5{
+width:100%;
+}
+
+.block5-img{
+width:100%;
+height:auto;
+display:block; /* убирает белые зазоры */
+}
+
+/* БЛОК 6 */
+
+.block6{
+width:100%;
+}
+
+/* верхняя часть */
+.block6-top{
+position:relative;
+width:100%;
+}
+
+.block6-img{
+width:100%;
+display:block;
+}
+
+/* кнопка открытия анкеты поверх фото */
+.block6-open-btn{
+position:absolute;
+
+/* тут двигаешь кнопку */
+top:75%;
+left:50%;
+transform:translate(-50%, -50%);
+
+border:none;
+background:transparent;
+padding:0;
+cursor:pointer;
+}
+
+.block6-open-btn img{
+display:block;
+width:160px; /* размер кнопки */
+max-width:70vw;
+height:auto;
+}
+
+/* анкета */
+.block6-form-wrap{
+display:none;
+width:100%;
+padding:24px 20px 10px;
+background-color: #D2BCA5;
+}
+
+.block6-form-wrap.show{
+display:block;
+}
+
+.block6-form{
+display:flex;
+flex-direction:column;
+gap:22px;
+}
+
+/* поле ввода */
+.block6-input{
+width:100%;
+padding:12px 0;
+border:none;
+border-bottom:1px solid #000000;
+outline:none;
+background:transparent;
+font-size:16px;
+font-family: 'Anastasia';
+}
+
+/* группы */
+.block6-group{
+display:flex;
+flex-direction:column;
+gap:12px;
+}
+
+.block6-group-title{
+font-size:22px;
+line-height:1.3;
+color:#000000;
+font-family: 'Anastasia';
+}
+
+/* варианты */
+.block6-option{
+display:flex;
+align-items:flex-start;
+gap:10px;
+font-size:18px;
+line-height:1.35;
+color:#000000;
+font-family: 'Anastasia';
+}
+
+.block6-option input{
+margin-top:2px;
+flex-shrink:0;
+}
+
+/* кнопка отправки */
+.block6-submit-btn{
+border:none;
+background:transparent;
+padding:0;
+cursor:pointer;
+align-self:center;
+}
+
+.block6-submit-btn img{
+display:block;
+width:170px;
+max-width:75vw;
+height:auto;
+}
+
+/* БЛОК 7 */
+
+.block7{
+width:100%;
+}
+
+.block7-wrap{
+position:relative;
+width:100%;
+}
+
+.block7-img{
+width:100%;
+display:block;
+}
+
+/* кнопка поверх */
+.block7-btn{
+position:absolute;
+
+/* 👇 ДВИГАЕШЬ ЗДЕСЬ */
+top:90%;
+left:50%;
+
+transform:translate(-50%, -50%);
+
+border:none;
+background:transparent;
+padding:0;
+}
+
+/* картинка кнопки */
+.block7-btn img{
+display:block;
+width:100px; /* размер кнопки */
+max-width:70vw;
+height:auto;
+}
+
+/* БЛОК 8 */
+
+.block8{
+width:100%;
+}
+
+.block8-wrap{
+position:relative;
+width:100%;
+}
+
+.block8-img{
+width:100%;
+display:block;
+}
+
+/* таймер */
+.block8-timer{
+position:absolute;
+
+/* 👇 двигаешь таймер */
+top:70%;
+left:50%;
+
+transform:translate(-50%, -50%);
+
+display:flex;
+gap:30px;
+}
+
+/* блок времени */
+.time-item{
+text-align:center;
+color:#000000;
+}
+
+.time-item span{
+display:block;
+font-size:40pt; /* цифры */
+font-weight:500;
+font-family: 'Anastasia';
+}
+
+.time-item p{
+font-size:15pt;
+margin-top:4px;
+font-family: 'Anastasia';
+}
+
+/* .time-item span{
+font-variant-numeric: tabular-nums;
+} */
+
+/* БЛОК 9 */
+
+.block9{
+width:100%;
+}
+
+.block9-img{
+width:100%;
+height:auto;
+display:block; /* убирает белые зазоры */
+}
+
+/* плавное появление блоков */
+
+.reveal{
+opacity:0;
+transform:translateY(30px);
+transition:opacity 1s ease, transform 1s ease;
+will-change:opacity, transform;
+}
+
+.reveal.show{
+opacity:1;
+transform:translateY(0);
+}
+
+/* кнопка музыки */
+
+.music-btn{
+position:fixed;
+right:20px;
+bottom:20px;
+
+width:50px;
+height:50px;
+
+background:#D2BCA5;
+border:none;
+border-radius:50%;
+
+z-index:9999;
+cursor:pointer;
+
+/* иконка через псевдо */
+display:flex;
+align-items:center;
+justify-content:center;
+}
+
+/* значок */
+.music-btn::before{
+content:"❚❚"; /* пауза */
+font-size:18px;
+color:#000;
+}
+
+/* когда выключено */
+.music-btn.off::before{
+content:"▶"; /* play */
+}

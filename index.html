@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title data-i18n="page_title">Приглашение</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+    <!-- музыка -->
+<audio id="bgMusic" loop>
+  <source src="30-christina-perri-a-thousand-years_l6SIkvzn.mp3" type="audio/mpeg">
+</audio>
+
+<!-- кнопка управления -->
+<button id="musicBtn" class="music-btn"></button>
+    <!-- БЛОК 1 -->
+
+<section class="block1 reveal">
+  <img class="block1-img" src="img/1.png" alt="">
+</section>
+
+    <!-- БЛОК 2 -->
+
+<section class="block2 reveal">
+  <img class="block2-img" src="img/2.png" alt="">
+</section>
+
+<!-- БЛОК 3 -->
+
+<section class="block3 reveal">
+
+  <div class="block3-wrap">
+    <img class="block3-img" src="img/3.png" alt="">
+
+    <a class="block3-btn" href="https://yandex.ru/maps/-/CPuOF0~a" target="_blank">
+  <img src="img/4.png" alt="">
+</a>
+  </div>
+
+</section>
+
+    <!-- БЛОК 4 -->
+
+<section class="block4 reveal">
+  <img class="block4-img" src="img/5.png" alt="">
+</section>
+
+   <!-- БЛОК 5 -->
+
+<section class="block5 reveal">
+  <img class="block5-img" src="img/6.png" alt="">
+</section>
+
+<!-- БЛОК 6 -->
+
+<section class="block6 reveal">
+
+  <div class="block6-top">
+    <img class="block6-img" src="img/7.png" alt="">
+
+    <button class="block6-open-btn" id="openFormBtn" type="button">
+      <img src="img/8.png" alt="">
+    </button>
+  </div>
+
+  <div class="block6-form-wrap" id="block6FormWrap">
+    <form class="block6-form" id="block6Form">
+
+      <input
+        class="block6-input"
+        type="text"
+        name="fio"
+        placeholder="Введите ваше ФИО"
+        required
+      >
+
+      <div class="block6-group">
+        <p class="block6-group-title">Подтвердите свое присутствие</p>
+
+        <label class="block6-option">
+          <input type="radio" name="attendance" value="Да, я с удовольствием приду" required>
+          <span>Да, я с удовольствием приду</span>
+        </label>
+
+        <label class="block6-option">
+          <input type="radio" name="attendance" value="К сожалению, не смогу присутствовать">
+          <span>К сожалению, не смогу присутствовать</span>
+        </label>
+      </div>
+
+      <div class="block6-group">
+        <p class="block6-group-title">Предпочтения в алкоголе</p>
+
+        <label class="block6-option">
+          <input type="checkbox" name="alcohol" value="Красное вино">
+          <span>Красное вино</span>
+        </label>
+
+        <label class="block6-option">
+          <input type="checkbox" name="alcohol" value="Белое вино">
+          <span>Белое вино</span>
+        </label>
+
+        <label class="block6-option">
+          <input type="checkbox" name="alcohol" value="Шампанское">
+          <span>Шампанское</span>
+        </label>
+
+        <label class="block6-option">
+          <input type="checkbox" name="alcohol" value="Виски/коньяк">
+          <span>Виски/коньяк</span>
+        </label>
+
+        <label class="block6-option">
+          <input type="checkbox" name="alcohol" value="Водка">
+          <span>Водка</span>
+        </label>
+      </div>
+
+      <button class="block6-submit-btn" type="submit">
+        <img src="img/9.png" alt="">
+      </button>
+
+    </form>
+  </div>
+
+</section>
+
+<!-- БЛОК 7 -->
+
+<section class="block7 reveal">
+
+  <div class="block7-wrap">
+    <img class="block7-img" src="img/10.png" alt="">
+
+    <a class="block7-btn" href="https://t.me/+Y4GZfIlVd1gxOTFi" target="_blank">
+      <img src="img/11.png" alt="">
+    </a>
+  </div>
+
+</section>
+
+<!-- БЛОК 8 -->
+
+<section class="block8 reveal">
+
+  <div class="block8-wrap">
+    <img class="block8-img" src="img/12.png" alt="">
+
+    <div class="block8-timer">
+      <div class="time-item">
+        <span id="days">00</span>
+        <p>Дней</p>
+      </div>
+
+      <div class="time-item">
+        <span id="hours">00</span>
+        <p>Часов</p>
+      </div>
+
+      <div class="time-item">
+        <span id="minutes">00</span>
+        <p>Минут</p>
+      </div>
+
+      <div class="time-item">
+        <span id="seconds">00</span>
+        <p>Секунд</p>
+      </div>
+    </div>
+
+  </div>
+
+</section>
+
+    <!-- БЛОК 9 -->
+
+<section class="block9 reveal">
+  <img class="block9-img" src="img/13.png" alt="">
+</section>
+
+  <script src="script.js"></script>
+</body>
+</html>
