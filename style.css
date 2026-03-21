@@ -399,7 +399,7 @@ overflow:hidden;
 .start-img{
 position: absolute;
 width:100%;
-top: 40px;
+top: 20px;
 height:auto;
 display:block;
 }
@@ -409,7 +409,7 @@ display:block;
 position:absolute;
 
 /* 👇 двигаешь кнопку */
-bottom:200px;
+bottom:250px;
 left:50%;
 
 transform:translateX(-50%);
