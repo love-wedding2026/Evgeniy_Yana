@@ -409,7 +409,7 @@ display:block;
 position:absolute;
 
 /* 👇 двигаешь кнопку */
-bottom:250px;
+bottom:200px;
 left:50%;
 
 transform:translateX(-50%);
@@ -421,7 +421,7 @@ cursor:pointer;
 }
 
 .start-btn img{
-width:160px;
+width:130px;
 max-width:70vw;
 display:block;
 }
