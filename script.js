@@ -1,3 +1,20 @@
+// СТАРТОВЫЙ ЭКРАН
+
+const startScreen = document.getElementById("startScreen");
+const startBtn = document.getElementById("startBtn");
+const siteContent = document.getElementById("siteContent");
+
+if(startBtn){
+
+startBtn.addEventListener("click", () => {
+
+  siteContent.classList.add("show");
+  startScreen.classList.add("hide");
+
+});
+
+}
+
 // БЛОК 6 — открыть/закрыть анкету
 
 const openFormBtn = document.getElementById("openFormBtn");

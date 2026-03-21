@@ -167,6 +167,7 @@ gap:22px;
 width:100%;
 padding:12px 0;
 border:none;
+color: #000;
 border-bottom:1px solid #000000;
 outline:none;
 background:transparent;
@@ -174,18 +175,7 @@ font-size:16px;
 font-family: 'Anastasia';
 }
 
-.block6-input::placeholder{
-color:#000000;
-opacity:1;
-}
 
-.block6-input::-webkit-input-placeholder{
-color:#000000;
-}
-
-.block6-input:-ms-input-placeholder{
-color:#000000;
-}
 
 /* группы */
 .block6-group{
@@ -384,4 +374,64 @@ color:#000;
 /* когда выключено */
 .music-btn.off::before{
 content:"▶"; /* play */
+}
+
+/* стартовый экран */
+
+.start-screen{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100vh;
+z-index:9999;
+background:#fff;
+overflow:hidden;
+}
+
+/* фото */
+.start-img{
+width:100%;
+height:100%;
+object-fit:cover;
+display:block;
+}
+
+/* кнопка */
+.start-btn{
+position:absolute;
+
+/* 👇 двигаешь кнопку */
+bottom:150px;
+left:50%;
+
+transform:translateX(-50%);
+
+border:none;
+background:transparent;
+padding:0;
+cursor:pointer;
+}
+
+.start-btn img{
+width:160px;
+max-width:70vw;
+display:block;
+}
+
+/* весь сайт скрыт */
+.site-content{
+display:none;
+}
+
+/* при открытии */
+.site-content.show{
+display:block;
+}
+
+/* скрытие стартового */
+.start-screen.hide{
+opacity:0;
+visibility:hidden;
+transition:opacity 0.8s ease;
 }
