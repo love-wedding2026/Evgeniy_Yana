@@ -245,7 +245,7 @@ position:absolute;
 
 /* 👇 ДВИГАЕШЬ ЗДЕСЬ */
 top:90%;
-left:50%;
+left:20%;
 
 transform:translate(-50%, -50%);
 
@@ -256,6 +256,27 @@ padding:0;
 
 /* картинка кнопки */
 .block7-btn img{
+display:block;
+width:100px; /* размер кнопки */
+max-width:70vw;
+height:auto;
+}
+
+.block7-btn2{
+position:absolute;
+
+/* 👇 ДВИГАЕШЬ ЗДЕСЬ */
+top:90%;
+left:80%;
+
+transform:translate(-50%, -50%);
+
+border:none;
+background:transparent;
+padding:0;
+}
+
+.block7-btn2 img{
 display:block;
 width:100px; /* размер кнопки */
 max-width:70vw;
@@ -409,7 +430,7 @@ display:block;
 position:absolute;
 
 /* 👇 двигаешь кнопку */
-bottom:230px;
+bottom:200px;
 left:50%;
 
 transform:translateX(-50%);
@@ -421,7 +442,7 @@ cursor:pointer;
 }
 
 .start-btn img{
-width:130px;
+width:160px;
 max-width:70vw;
 display:block;
 }
