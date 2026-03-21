@@ -430,7 +430,7 @@ display:block;
 position:absolute;
 
 /* 👇 двигаешь кнопку */
-bottom:250px;
+bottom:200px;
 left:50%;
 
 transform:translateX(-50%);
